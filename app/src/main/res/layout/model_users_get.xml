@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/space_5"
+    android:backgroundTint="#12A7EF"
+    app:cardCornerRadius="@dimen/space_10">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvFirstNameSecond"
+            android:layout_width="@dimen/space_0"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/space_5"
+            android:padding="@dimen/space4"
+            android:text="@string/app_name"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_15"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv1"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="RtlCompat" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textSize="@dimen/size_15"
+            app:layout_constraintBottom_toBottomOf="@+id/tvFirstNameSecond"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvFirstNameSecond" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:textSize="@dimen/size_15"
+            app:layout_constraintBottom_toBottomOf="@+id/tvEmailSecond"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvEmailSecond" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvEmailSecond"
+            android:layout_width="@dimen/space_0"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/space_5"
+            android:padding="@dimen/space4"
+            android:text="@string/app_name"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_15"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv4"
+            app:layout_constraintTop_toBottomOf="@+id/tvIdSecond"
+            tools:ignore="RtlCompat" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/surname"
+            android:textSize="@dimen/size_15"
+            app:layout_constraintBottom_toBottomOf="@+id/tvGenderSecond"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvGenderSecond" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/id"
+            android:textSize="@dimen/size_15"
+            app:layout_constraintBottom_toBottomOf="@+id/tvIdSecond"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvIdSecond" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvGenderSecond"
+            android:layout_width="@dimen/space_0"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/space_5"
+            android:padding="@dimen/space4"
+            android:text="@string/app_name"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_15"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv2"
+            app:layout_constraintTop_toBottomOf="@+id/tvFirstNameSecond"
+            tools:ignore="RtlCompat" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvIdSecond"
+            android:layout_width="@dimen/space_0"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/space_5"
+            android:padding="@dimen/space4"
+            android:text="@string/app_name"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_15"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv3"
+            app:layout_constraintTop_toBottomOf="@+id/tvGenderSecond"
+            tools:ignore="RtlCompat" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="status    :"
+            android:textSize="@dimen/size_15"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvEmailSecond" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvStatus"
+            android:layout_width="@dimen/space_0"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/space_5"
+            android:padding="@dimen/space4"
+            android:text="@string/app_name"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_15"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv5"
+            app:layout_constraintTop_toBottomOf="@+id/tvEmailSecond"
+            tools:ignore="RtlCompat" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
